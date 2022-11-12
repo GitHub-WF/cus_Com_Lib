@@ -1,1 +1,36 @@
 // 全局 mixins
+@mixin button_size($padding_y, $padding_x, $font_size, $border_raduis) {
+  padding: $padding_y $padding_x;
+  font-size: $font_size;
+  border-radius: $border_raduis;
+}
+
+@mixin button_style(
+  $background,
+  $border,
+  $color,
+  $hover_background: lighten($background, 7.5%),
+  $hover_border: lighten($border, 10%),
+  $hover_color: $color
+) {
+  background: $background;
+  border-color: $border;
+  color: $color;
+  &:hover {
+    background: $hover_background;
+    border-color: $hover_border;
+    color: $hover_color;
+  }
+  &:focus,
+  &.focus {
+    background: $hover_background;
+    border-color: $hover_border;
+    color: $hover_color;
+  }
+  &:disabled,
+  &.disabled {
+    color: $color;
+    background: $background;
+    border-color: $border;
+  }
+}
