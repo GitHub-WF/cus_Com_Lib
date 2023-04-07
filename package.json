@@ -53,15 +53,8 @@
     }
   },
   "lint-staged": {
-    "*.vue": [
-      "eslint --fix",
-      "stylelint --fix"
-    ],
-    "*.{js,jsx,ts,tsx}": [
+    "*.{js,jsx,tsx}": [
       "eslint --fix"
-    ],
-    "*.{htm,html,css,sss,less,scss,sass}": [
-      "stylelint --fix"
     ]
   }
 }
