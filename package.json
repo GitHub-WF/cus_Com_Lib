@@ -7,6 +7,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
     "lint-staged": "lint-staged"
@@ -51,7 +52,6 @@
     ]
   },
   "lint-staged": {
-    "**/*.{js,jsx,ts,tsx}": "npm run lint",
-    "**/*.{js,jsx,tsx,ts,less,md}": [ "prettier --write" ]
+    "**/*.{js,jsx,ts,tsx}": "npm run lint"
   }
 }
