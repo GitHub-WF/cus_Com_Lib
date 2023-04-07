@@ -1,61 +1,63 @@
 // 各种变量和可配置设置
 /* 中性色 */
-$white:     #fff !default; // !default 默认样式
-$gray_100:  #f8f9fa !default;
-$gray_200:  #e9ecef !default;
-$gray_300:  #dee2e6 !default;
-$gray_400:  #ced4da !default;
-$gray_500:  #adb5bd !default;
-$gray_600:  #6c757d !default;
-$gray_700:  #495057 !default;
-$gray_800:  #343a40 !default;
-$gray_900:  #212529 !default;
-$black:     #000 !default;
+$white: #fff !default; // !default 默认样式
+$gray_100: #f8f9fa !default;
+$gray_200: #e9ecef !default;
+$gray_300: #dee2e6 !default;
+$gray_400: #ced4da !default;
+$gray_500: #adb5bd !default;
+$gray_600: #6c757d !default;
+$gray_700: #495057 !default;
+$gray_800: #343a40 !default;
+$gray_900: #212529 !default;
+$black: #000 !default;
 /* 基础色 */
-$blue:    #0d6efd !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #d63384 !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #fadb14 !default;
-$green:   #52c41a !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #fadb14 !default;
+$green: #52c41a !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
 /* 系统色 */
-$primary:   $blue !default;
+$primary: $blue !default;
 $secondary: $gray_600 !default;
-$success:   $green !default;
-$info:      $cyan !default;
-$warning:   $yellow !default;
-$danger:    $red !default;
-$light:     $gray_100 !default;
-$dark:      $gray_800 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray_100 !default;
+$dark: $gray_800 !default;
 
 // 主流非衬线字体
-$font_family_sans_serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji" !default;
+$font_family_sans_serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji" !default;
 // 等宽字体
 $font_family_monospace: SFMono-Regular, Menlo, Monaco, Consolas !default;
 // 默认字体
 $font_family_base: $font_family_sans_serif !default;
 
 // 字体大小
-$font_size_base:  1rem !default;
-$font_size_lg:    $font_size_base * 1.25 !default;
-$font_size_sm:    $font_size_base * 0.875 !default;
+$font_size_base: 1rem !default;
+$font_size_lg: $font_size_base * 1.25 !default;
+$font_size_sm: $font_size_base * 0.875 !default;
 
 // 字重
-$font_weight_lighter:   lighter !default;
-$font_weight_light:     300 !default;
-$font_weight_normal:    400 !default;
-$font_weight_bold:      700 !default;
-$font_weight_bolder:    bolder !default;
-$font_weight_base:      $font_weight_normal !default;
+$font_weight_lighter: lighter !default;
+$font_weight_light: 300 !default;
+$font_weight_normal: 400 !default;
+$font_weight_bold: 700 !default;
+$font_weight_bolder: bolder !default;
+$font_weight_base: $font_weight_normal !default;
 
 // 行高
-$line_height_base:  1.5 !default;
-$line_height_lg:    2 !default;
-$line_height_sm:    1.25 !default;
+$line_height_base: 1.5 !default;
+$line_height_lg: 2 !default;
+$line_height_sm: 1.25 !default;
 
 // 标题大小
 $h1_font_size: $font_size_base * 2.5 !default;
@@ -66,15 +68,18 @@ $h5_font_size: $font_size_base * 1.25 !default;
 $h6_font_size: $font_size_base !default;
 
 // 链接
-$link_color:              $primary !default;
-$link_decoration:         none !default;
-$link_hover_color:        darken($link_color, 15%) !default; // darken 内置函数，让颜色变暗
-$link_hover_decoration:   underline !default;
+$link_color: $primary !default;
+$link_decoration: none !default;
+$link_hover_color: darken(
+  $link_color,
+  15%
+) !default; // darken 内置函数，让颜色变暗
+$link_hover_decoration: underline !default;
 
 // body
-$body_bg:           $white !default;
-$body_color:        $gray_900 !default;
-$body_text_align:   null !default;
+$body_bg: $white !default;
+$body_color: $gray_900 !default;
+$body_text_align: null !default;
 
 // border
 $border_width: 1px !default;
@@ -98,18 +103,18 @@ $headings_color: null !default;
 // 按钮
 // 按钮基本属性
 $btn_font_weight: 400;
-$btn_padding_y: .375rem !default;
-$btn_padding_x: .75rem !default;
+$btn_padding_y: 0.375rem !default;
+$btn_padding_x: 0.75rem !default;
 $btn_font_family: $font_family_base !default;
 $btn_font_size: $font_size_base !default;
 $btn_line_height: $line_height_base !default;
 
 // 不同大小按钮的 padding 和 font size
-$btn_padding_y_sm: .25rem !default;
-$btn_padding_x_sm: .5rem !default;
+$btn_padding_y_sm: 0.25rem !default;
+$btn_padding_x_sm: 0.5rem !default;
 $btn_font_size_sm: $font_size_sm !default;
 
-$btn_padding_y_lg: .5rem !default;
+$btn_padding_y_lg: 0.5rem !default;
 $btn_padding_x_lg: 1rem !default;
 $btn_font_size_lg: $font_size_lg !default;
 
@@ -117,8 +122,8 @@ $btn_font_size_lg: $font_size_lg !default;
 $btn_border_width: $border_width !default;
 
 // 按钮其他
-$btn_box_shadow: inset 0 1px 0 rgba($white, .15) !default;
-$btn_disabled_opacity: .65 !default;
+$btn_box_shadow: inset 0 1px 0 rgba($white, 0.15) !default;
+$btn_disabled_opacity: 0.65 !default;
 
 // 链接按钮
 $btn_link_color: $link_color !default;
@@ -130,4 +135,4 @@ $btn_border_radius: $border_radius !default;
 $btn_border_radius_lg: $border_radius_lg !default;
 $btn_border_radius_sm: $border_radius_sm !default;
 
-$btn_transition: color .15s ease-in-out, background-color .15s ease-in-out !default;
+$btn_transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out !default;
