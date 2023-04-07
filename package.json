@@ -9,7 +9,7 @@
     "eject": "react-scripts eject",
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky install",
-    "lint": "eslint src",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src",
     "lint-staged": "lint-staged"
   },
   "devDependencies": {
