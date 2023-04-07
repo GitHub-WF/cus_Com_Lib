@@ -33,7 +33,7 @@
       "react-app/jest"
     ],
     "rules": {
-      "additional-rule": "warn"
+      "additional-rule": "off"
     },
     "overrides": [
       {
@@ -41,10 +41,10 @@
           "**/*.ts?(x)"
         ],
         "rules": {
-          "additional-typescript-only-rule": "warn",
+          "additional-typescript-only-rule": "off",
           "indent": [
             "error",
-            "2"
+            2
           ]
         }
       }
